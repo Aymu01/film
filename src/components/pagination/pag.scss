@@ -1,0 +1,43 @@
+.light-pag{
+    .prev-next{
+        background-color: rgb(25, 118, 210);
+        color: #fff;
+        &:hover{
+            background-color: rgb(21, 101, 192);
+            }
+    }
+}
+
+.dark-pag{
+    .prev-next{
+        background-color: rgb(144, 202, 249);
+        color: rgba(0, 0, 0, 0.87);
+        &:hover{
+            background-color: rgb(66, 165, 245);
+         }
+    }
+    .num{
+        color: #fff;
+    }
+}
+
+.pag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    .prev-next{
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+        &:hover{
+            box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+        }
+    }
+    .num{
+        font-size: 29px;
+    }
+}

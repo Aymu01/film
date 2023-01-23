@@ -1,0 +1,36 @@
+.favWatch-light{
+    background-color: #fff;
+    .logout{
+        color: black;
+    }
+}
+.favWatch-dark{
+    background-color: rgba(12, 12, 12);
+    .logout{
+        color: red;
+    }
+}
+.fav-watch{
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 30px 0 0;
+.fav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .logout{
+        display: block;
+    }
+}
+}
+
+@media (min-width:768px){ 
+    .fav-watch{
+        .logout{
+            display: none;
+        }
+    }
+}

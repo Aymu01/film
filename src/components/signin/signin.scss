@@ -1,0 +1,182 @@
+.light-signIn{
+        h2{
+            color: rgb(25, 118, 210);
+        }
+        .form{
+            .info{
+                background-color: rgb(84, 124, 165);
+                &::placeholder{
+                    color: rgba(225, 240, 241, 0.699);
+                  }
+            }
+            button{
+                color: rgb(84, 124, 165);
+                border: 1px solid rgb(84, 124, 165) ;
+            }
+            .check-need{
+                .check{
+                    background-color: rgb(177, 226, 233);
+                }
+                input{
+                    &:checked + .check{
+                        background: rgb(177, 226, 233) url(../signin/image/check-mark-16.png) no-repeat center ;
+                    }
+                }
+
+            }
+            .error-span{
+                color: rgb(16, 86, 155);
+            }
+
+        }
+        .signup{
+            color: rgba(14, 119, 151, 0.836);
+        }
+        .sign-link{
+            color: rgb(6, 4, 158);
+        }
+    }
+
+.dark-signIn{
+        h2{
+            color: #fff;
+        }
+        .info{
+            background-color: #333;
+            &::placeholder{
+              color: #8c8c8c;
+            }
+        }
+        button{
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+        }
+        .check-need{
+            .check{
+                background-color: #737373;
+            }
+            label{
+                color: #b3b3b3;
+            }
+            .need{
+                color: #b3b3b3;
+            }
+            input{
+                &:checked + .check{
+                    background: #737373 url(../signin/image/check-mark-16.png) no-repeat center ;
+                }
+            }
+        }
+        .error-span{
+            color: #e87c03;
+        }
+        .signup{
+            color: #737373;
+        }
+        .sign-link{
+            color: #fff;
+        }
+    }
+
+.sign-area{
+    padding: 25px 20px;
+    height: 573px;
+    h2{
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    .notLogin{
+        padding: 16px ;
+        font-size: 14px;
+        border-radius: 6px;
+        background-color: #ffebe9;
+        border:1px solid rgba(255,129,130,0.4);
+        margin-bottom: 15px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+        .validation{
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            position: relative;
+            .show{
+                position: absolute;
+                right: 10px;
+                top: 14px;
+                width: 23px;
+                height: 23px;
+                color: #fff;
+               
+            }
+        }
+        .error-span{
+            font-size: 13px;
+        }
+        .info{
+          padding: 16px 20px;
+          border-radius: 4px;
+          border: none;
+          font-size: 16px;
+          color: #fff;
+        }
+        button{
+            padding: 13px 0;
+            font-size: 16px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .check-need{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 40px;
+            label{
+                padding-left: 20px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            input{
+                appearance: none;
+                font-weight: 500;
+                
+                &:checked + .check{
+                    background-size: 12px;
+                }
+            }
+            .check{
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 4px;
+                bottom: 1px;
+                left: 0;
+            }
+            .need{
+                font-size: 14px;
+                
+            }
+        }
+    }
+  
+  
+}
+
+@media (min-width:768px) {
+    .sign-area{
+       display: grid;
+       place-items: center;
+       padding-top: 60px;
+       .sign_in{
+        width: 35%;
+       }
+    }
+
+  
+}

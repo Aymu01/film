@@ -1,0 +1,25 @@
+.fav-light{
+     h2{
+        color: black;
+     }
+}
+
+.fav-dark{
+    h2{
+        color: red;
+    }
+}
+
+ .fav{
+        h2{
+           margin: 0 0 20px 40px;
+           font-weight: 400;
+           font-size: 30px;
+        }
+        .movie-list{
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+}
+

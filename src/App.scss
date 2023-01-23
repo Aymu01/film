@@ -1,0 +1,39 @@
+.light-app{
+  background-color: #fff;
+}
+.dark-app{
+  background-color: rgba(12, 12, 12);
+}
+.App{
+position: relative;
+.mic{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: linear-gradient(122deg,rgb(0, 255, 204),rgb(0, 115, 255));
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out 0s, opacity 0.4s ease-in-out 0s;
+  &:hover{
+    transform: scale(1.11111);
+    background-image: linear-gradient(122deg,rgb(78, 172, 153),rgb(8, 64, 133));
+  }
+  .micIcon{
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+  }
+}
+}
+
+@media (min-width:768px) {
+  .main{
+   margin-left: 17%;
+   height: max-content;
+  }
+}
